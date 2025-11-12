@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CACAOTÉ | Patisserie & Brasserie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* General font and color setup */
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #f8f9fa !important;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+            margin: 0 8px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: pink !important;
+        }
+
+        .menu-section {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .menu-section .col-md-6.overflow-auto {
+            background-color: #fffdfb;
+            border-left: 1px solid #eee;
+        }
+
+
+        .menu-section h1,
+        .menu-section h4 {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+        }
+
+        .menu-section h4 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 1rem;
+        }
+
+
+        .object-fit-cover {
+            object-fit: cover;
+        }
+
+        /* Custom scrollbar for the menu area */
+        .overflow-auto::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .overflow-auto::-webkit-scrollbar-thumb {
+            background-color: #aaa;
+            border-radius: 10px;
+        }
+
+        .border-top {
+            border-color: #ddd !important;
+        }
+
+        .border-top.pt-3.mb-4 {
+            padding-top: 1.5rem !important;
+            margin-bottom: 2rem !important;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #bfbfbf;
+            color: #000;
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+
+        footer h2 {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+        }
+
+        footer p {
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.85rem;
+            margin-top: 40px;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="trasparent.png" alt="Logo" width="45" height="45" class="me-2">
+                CACAOTÉ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Book a Table</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="menu-section py-5" style="background-color: #f9f8f6;">
+        <div class="container-fluid px-5">
+            <div class="row" style="min-height: 100vh;">
+
+                <!-- LEFT: Sticky Image -->
+                <div class="col-md-6 d-none d-md-block sticky-top p-0" style="height: 100vh;">
+
+                    <img src="wine.jpg" alt="Wine Glasses"
+                        class="img-fluid h-100 w-100 object-fit-cover rounded shadow-sm">
+                </div>
+
+                <!-- RIGHT: Scrollable Menu -->
+                <div class="col-md-6 overflow-auto ps-4 pe-4" style="max-height: 100vh;">
+
+                    <div class="p-4">
+                        <h1 class="display-3 fw-bold mb-4">MENU</h1>
+
+                        <!-- Food-->
+                        <h4 class="fw-bold mb-2">FOOD</h4>
+                        <p class="text-muted mb-5">These dishes are lingering over.</p>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">ONION SOUP</h5>
+                                <span class="fw-semibold">$12.00</span>
+                            </div>
+                            <p class="text-muted mb-0">A classic, rich onion soup with melted Gruyere cheese</p>
+                        </div>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">STEAK TARTARE</h5>
+                                <span class="fw-semibold">$18.00</span>
+                            </div>
+                            <p class="text-muted mb-0">Finely chopped raw steak with capers, onions and seasoning</p>
+                        </div>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">PAN-SEARED SCALLOPS</h5>
+                                <span class="fw-semibold">$22.00</span>
+                            </div>
+                            <p class="text-muted mb-0">Scallops served with a delicated lemon beurre blanc sauce</p>
+                        </div>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">BEEF WELLINGTON</h5>
+                                <span class="fw-semibold">$30.00</span>
+                            </div>
+                            <p class="text-muted mb-0">A tender filet mignon encased in puff pastry with mushroom
+                                duxelles</p>
+                        </div>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">SALMON ROULADE</h5>
+                                <span class="fw-semibold">$26.00</span>
+                            </div>
+                            <p class="text-muted mb-0">Rolled salmon filet with a creamy dill sauce and asparagusiry</p>
+                        </div>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">TRUFFLE RISOTTO</h5>
+                                <span class="fw-semibold">$24.00</span>
+                            </div>
+                            <p class="text-muted mb-0">Creamy risotto with black truffle and Parmesan</p>
+                        </div>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">CHEESE PLATE</h5>
+                                <span class="fw-semibold">$16.00</span>
+                            </div>
+                            <p class="text-muted mb-0">An assortement of fine cheeses with figs and a toasted baguette
+                            </p>
+                        </div><br><br><br><br>
+
+
+
+                        <!-- DESSERT -->
+                        <h4 class="fw-semibold mb-2">DESSERT</h4>
+                        <p class="text-muted mb-5">Our desserts are made in-house by our expert pastry chef</p>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">CRÈME BRÛLÉE</h5>
+                                <span class="fw-semibold">$10.00</span>
+                            </div>
+                            <p class="text-muted mb-0">A freshly baked brownie loaded with dark chocolate chips and
+                                walnuts</p>
+                        </div>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">TIRAMISU</h5>
+                                <span class="fw-semibold">$12.00</span>
+                            </div>
+                            <p class="text-muted mb-0">A traditional Italian dessert with layers of coffee-soaked
+                                ladyfingers and mascarpone</p>
+                        </div><br><br><br><br>
+
+
+                        <!--Cocktails-->
+                        <h4 class="fw-semibold mb-2">COCKTAILS</h4>
+                        <p class="text-muted mb-5">
+                            Our handcrafted cocktails are mixed with premium spirits and fresh ingredients for a
+                            perfectly balanced experience.
+                        </p>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">MARTINI</h5>
+                                <span class="fw-semibold">$14.00</span>
+                            </div>
+                            <p class="text-muted mb-0">Gin or vodka, dry vermouth, choice of garnish</p>
+                        </div>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">MANHATTAN</h5>
+                                <span class="fw-semibold">$15.00</span>
+                            </div>
+                            <p class="text-muted mb-0">Bourbon or rye, sweet vermouth, bitters, cherry garnish</p>
+                        </div>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">NEGRONI</h5>
+                                <span class="fw-semibold">$14.00</span>
+                            </div>
+                            <p class="text-muted mb-0">Gin, Campari, sweet vermouth, orange twist</p>
+                        </div>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">WHISKEY SOUR</h5>
+                                <span class="fw-semibold">$13.00</span>
+                            </div>
+                            <p class="text-muted mb-0">Bourbon, lemon juice, simple syrup, cherry and orange slice</p>
+                        </div>
+
+                        <div class="border-top pt-3 mb-4">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="fst-italic mb-1">GIMLET</h5>
+                                <span class="fw-semibold">$13.00</span>
+                            </div>
+                            <p class="text-muted mb-0">Gin or vodka, lime juice, simple syrup</p>
+                        </div><br><br><br><br>
+
+
+
+
+                        <!-- Wines -->
+                        <h4 class="fw-semibold mb-2">WINES</h4>
+                        <p class="text-muted mb-5">
+                            A curated selection of elegant wines sourced from renowned vineyards, offering rich flavors
+                            and perfect pairings for every dish.
+                        </p>
+
+                        <div class="mb-4 pb-3 border-top">
+                            <h5 class="fst-italic mb-1">CHARDONNAY</h5>
+                            <p class="text-muted mb-2">Private Winery</p>
+                            <div class="row">
+                                <div class="col-6">Glass</div>
+                                <div class="col-6 text-end fw-semibold">$12.00</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">Bottle</div>
+                                <div class="col-6 text-end fw-semibold">$48.00</div>
+                            </div>
+                        </div>
+
+
+                        <div class="mb-4 pb-3 border-top">
+                            <h5 class="fst-italic mb-1">SAUVIGNON BLANC</h5>
+                            <p class="text-muted mb-2">Private Winery</p>
+                            <div class="row">
+                                <div class="col-6">Glass</div>
+                                <div class="col-6 text-end fw-semibold">$11.00</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">Bottle</div>
+                                <div class="col-6 text-end fw-semibold">$44.00</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 pb-3 border-top">
+                            <h5 class="fst-italic mb-1">PINOT NOIR</h5>
+                            <p class="text-muted mb-2">Private Winery</p>
+                            <div class="row">
+                                <div class="col-6">Glass</div>
+                                <div class="col-6 text-end fw-semibold">$14.00</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">Bottle</div>
+                                <div class="col-6 text-end fw-semibold">$56.00</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 pb-3 border-top">
+                            <h5 class="fst-italic mb-1">CABERNET SAUVIGNON</h5>
+                            <p class="text-muted mb-2">Private Winery</p>
+                            <div class="row">
+                                <div class="col-6">Glass</div>
+                                <div class="col-6 text-end fw-semibold">$13.00</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">Bottle</div>
+                                <div class="col-6 text-end fw-semibold">$52.00</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 pb-3 border-top">
+                            <h5 class="fst-italic mb-1">MERLOT</h5>
+                            <p class="text-muted mb-2">Private Winery</p>
+                            <div class="row">
+                                <div class="col-6">Glass</div>
+                                <div class="col-6 text-end fw-semibold">$12.00</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">Bottle</div>
+                                <div class="col-6 text-end fw-semibold">$48.00</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 pb-3 border-top">
+                            <h5 class="fst-italic mb-1">SYRAH / SHIRAZ</h5>
+                            <p class="text-muted mb-2">Private Winery</p>
+                            <div class="row">
+                                <div class="col-6">Glass</div>
+                                <div class="col-6 text-end fw-semibold">$14.00</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">Bottle</div>
+                                <div class="col-6 text-end fw-semibold">$56.00</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 pb-3 border-top">
+                            <h5 class="fst-italic mb-1">CHAMPAGNE</h5>
+                            <p class="text-muted mb-2">Private Winery</p>
+                            <div class="row">
+                                <div class="col-6">Glass</div>
+                                <div class="col-6 text-end fw-semibold">$18.00</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">Bottle</div>
+                                <div class="col-6 text-end fw-semibold">$72.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-start gy-4">
+                <div class="col-md-1 col-3">
+                    <img src="trasparent.png" alt="Logo" class="img-fluid" style="max-width: 70px;">
+                </div>
+                <div class="col-md-7 col-9">
+                    <p class="mb-0 text-uppercase fw-semibold small">Patisserie & Brasserie</p>
+                    <h2 class="fw-bold">CACAOTÉ</h2>
+                    <p>A: Off Sindhu Bhavan Road<br>Prl Colony, Bodakdev, Ahmedabad 380054<br>T: +91 7984293268</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2025 by CACAOTÉ | Powered by <strong>Krishna</strong>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CACAOTÉ | Patisserie & Brasserie</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #f8f9fa !important;
+            padding: 12px 0;
+            transition: 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+            background-color: #ffffff !important;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+            margin: 8px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: pink !important;
+        }
+
+        /* ABOUT IMAGE */
+        .about img {
+            border-radius: 15px;
+            width: 100%;
+            height: auto;
+        }
+
+        @media(max-width: 768px) {
+            .about img {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Reservation Form */
+        .btn-accent {
+            background-color: #ffb6c1;
+            border: none;
+            padding: 10px 20px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn-accent:hover {
+            background-color: #ff8fa3;
+            color: white;
+        }
+
+        .form-control,
+        .form-select {
+            border-radius: 12px;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #ffb6c1;
+            box-shadow: 0 0 8px rgba(255, 182, 193, 0.5);
+        }
+
+        /* Scroll animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.7s ease-in-out;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #bfbfbf;
+            color: #000;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            margin-top: 50px;
+        }
+
+        footer h2 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 0.85rem;
+            margin-top: 40px;
+            border-top: 1px solid rgba(0, 0, 0, 0.25);
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="trasparent.png" alt="Logo" width="45" height="45" class="me-2">
+                CACAOTÉ
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Book a Table</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <section class="about py-5 bg-light fade-up" id="about" style="margin-top: 70px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <img src="interior.jpg" alt="Restaurant Interior" class="img-fluid shadow">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="fw-bold mb-3">Our Dining</h2>
+                    <p>
+                        At CACAOTÉ Restaurant, we serve authentic dishes made from the freshest ingredients. Our chefs
+                        blend traditional recipes with modern techniques to bring you an unforgettable dining experience.
+                    </p>
+                    <p>
+                        Experience a cozy atmosphere, friendly hospitality, and food that feels like home.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVATION SECTION -->
+    <section id="reserve" class="py-5 fade-up">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Reserve a Table</h2>
+                    <p class="text-muted">Book a table online for a quick, hassle-free reservation.</p>
+
+                    <form class="row g-2">
+                        <div class="col-md-6">
+                            <input class="form-control" placeholder="Name" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <input class="form-control" placeholder="Phone or Email" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="date" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="time" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <select class="form-select" required>
+                                <option>2 people</option>
+                                <option>4 people</option>
+                                <option>6 people</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 mt-2">
+                            <button class="btn btn-accent">Request Reservation</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="p-4 border rounded shadow-sm">
+                        <h5 class="mb-3">Opening Hours</h5>
+                        <p><strong>Mon - Fri:</strong> 11:00 - 22:30</p>
+                        <p><strong>Sat - Sun:</strong> 09:00 - 23:00</p>
+
+                        <hr>
+
+                        <h6>Location</h6>
+                        <p class="small mb-0">123 Food Street, City, Country</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-start gy-4">
+                <div class="col-md-1 col-3">
+                    <img src="trasparent.png" alt="Logo" class="img-fluid" style="max-width: 70px;">
+                </div>
+
+                <div class="col-md-7 col-9">
+                    <p class="mb-0 text-uppercase fw-semibold small">Patisserie & Brasserie</p>
+                    <h2 class="fw-bold">CACAOTÉ</h2>
+                    <p>
+                        A: Off Sindhu Bhavan Road<br>
+                        Prl Colony, Bodakdev, Ahmedabad 380054<br>
+                        T: +91 7984293268
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2025 by CACAOTÉ | Powered by <strong>Krishna</strong>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Navbar shadow on scroll
+        window.addEventListener("scroll", () => {
+            const nav = document.querySelector(".navbar");
+            if (window.scrollY > 50) nav.classList.add("scrolled");
+            else nav.classList.remove("scrolled");
+        });
+
+        // Fade-up animation
+        const fadeElems = document.querySelectorAll(".fade-up");
+        function revealOnScroll() {
+            fadeElems.forEach(el => {
+                const rect = el.getBoundingClientRect().top;
+                if (rect < window.innerHeight - 120) {
+                    el.classList.add("visible");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        window.addEventListener("load", revealOnScroll);
+    </script>
+
+</body>
+
+</html>
